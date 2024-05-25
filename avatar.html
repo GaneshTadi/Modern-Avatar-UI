@@ -1,0 +1,60 @@
+# Modern-Avatar-UI
+<!DOCTYPE html>
+<!-- full source code on www.codehype.in  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Hover by CodeHype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #101010;
+  position: relative;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ddbe11;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: inset(-100vw 0 0 0 round 50%);
+  border: 6px solid rgb(234, 234, 234);
+}
+
+.avatar img {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.avatar:hover img {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+</style>
+  <body>
+    <div class="avatar">
+      <img
+        src="https://pngimg.com/uploads/elon_musk/elon_musk_PNG43.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
